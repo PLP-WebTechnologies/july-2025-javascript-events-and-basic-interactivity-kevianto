@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Interactive Web Pages!</h1>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section id="events">
+    <h2>🎉 Event Handling Example</h2>
+    <button id="clickBtn">Click me!</button>
+    <p id="clickMsg"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section id="interactive">
+    <h2>🎮 Interactive Elements</h2>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="themeToggle">Toggle Light/Dark Mode</button>
+
+    <!-- Counter Game -->
+    <div>
+      <h3>Counter Game</h3>
+      <button id="incrementBtn">Increment</button>
+      <span id="counter">0</span>
+    </div>
+
+    <!-- Collapsible FAQ -->
+    <div>
+      <h3>FAQ Section</h3>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript is a programming language for web interactivity.</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">DOM stands for Document Object Model, which allows JS to manipulate HTML.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="form-validation">
+    <h2>📋 Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <small class="error-msg"></small>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <small class="error-msg"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <small class="error-msg"></small>
+
+      <button type="submit">Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
